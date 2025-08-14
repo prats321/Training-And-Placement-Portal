@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Training & Placement Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Training & Placement Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#student">Student</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="student">
+      <h2>Student Registration</h2>
+      <form id="studentForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="branch" placeholder="Branch" required />
+        <input type="number" id="cgpa" step="0.01" placeholder="CGPA" required />
+        <button type="submit">Register</button>
+      </form>
+      <input type="text" id="studentSearch" placeholder="Search students..." />
+      <div id="studentList"></div>
+    </section>
+
+    <section id="jobs">
+      <h2>Job Openings</h2>
+      <form id="jobForm">
+        <input type="text" id="jobTitle" placeholder="Job Title" required />
+        <input type="text" id="company" placeholder="Company Name" required />
+        <input type="text" id="criteria" placeholder="Eligibility Criteria" required />
+        <button type="submit">Post Job</button>
+      </form>
+      <input type="text" id="jobSearch" placeholder="Search jobs..." />
+      <div id="jobList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Training and Placement Cell</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
